@@ -40,7 +40,7 @@ Okay, let's start storing some cats.
 In your terminal, in the sqlite prompt, type the following:
 
 ```sql
-INSERT INTO cats (name, age, breed) VALUES ('Maru', 3, 'Scottish Fold');
+INSERT INTO cats (name, age, breed) VALUES ("Maru", 3, "Scottish Fold");
 ```
 
 We use the `INSERT INTO` command, followed by the name of the table to which we want to add data. Then, in parentheses, we put the column names that we will be filling with data. This is followed by the `VALUES` keyword, which is accompanied by a parentheses enclosed list of the values that correspond to each column name.
@@ -51,7 +51,7 @@ Let's add a few more cats to our table. This time we'll do this via our text edi
 
 |name|age|breed|
 |----|---|-----|
-|"Lil\' Bub"|5|"American Shorthair"|
+|"Lil' Bub"|5|"American Shorthair"|
 |"Hannah"|1|"Tabby"|
 
 Each `INSERT INTO` statement gets its own line in the `.sql` file in your text editor. Each line needs to end with a `;`. Run the file with the following code in your terminal:
@@ -87,7 +87,7 @@ Which should give us back:
 
 ```bash
 1|Maru|3|Scottish Fold
-2|Lil\' Bub|5|American Shorthair
+2|Lil' Bub|5|American Shorthair
 3|Hannah|1|Tabby
 ```
 
@@ -110,7 +110,7 @@ That should return the following:
 
 ```bash
 Maru
-Lil\' Bub
+Lil' Bub
 Hannah
 ```
 
