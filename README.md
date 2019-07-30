@@ -40,8 +40,10 @@ Okay, let's start storing some cats.
 In your terminal, in the sqlite prompt, type the following:
 
 ```sql
-INSERT INTO cats (name, age, breed) VALUES ("Maru", 3, "Scottish Fold");
+INSERT INTO cats (name, age, breed) VALUES ('Maru', 3, 'Scottish Fold');
 ```
+
+**Hint:** You can use double single quotes (`'`) to escape the apostrophe in `'Lil'' Bub'`.
 
 We use the `INSERT INTO` command, followed by the name of the table to which we want to add data. Then, in parentheses, we put the column names that we will be filling with data. This is followed by the `VALUES` keyword, which is accompanied by a parentheses enclosed list of the values that correspond to each column name.
 
