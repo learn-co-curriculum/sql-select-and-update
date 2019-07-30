@@ -17,7 +17,7 @@ In this lesson, we'll cover different ways to manipulate and select data from SQ
 
 In this code along, we'll be creating a `cats` table in a `pets_database.db`. So, let's navigate to our terminal and get started.
 
-First let's create our `pets_database` by running the following command.
+First let's create our `pets_database` by running the following the command in the terminal:
 ```sql
 sqlite3 pets_database.db
 ```
