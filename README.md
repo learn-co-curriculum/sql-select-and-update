@@ -190,10 +190,10 @@ A boilerplate `DELETE` statement looks like this:
 DELETE FROM [table name] WHERE [column name] = [value];
 ```
 
-Let's go ahead and delete Lil' Bub from our `cats` table (sorry Lil' Bub):
+Let's go ahead and delete Maru from our `cats` table (it turns out Maru is actually an iguana):
 
 ```sql
-sqlite> DELETE FROM cats WHERE id = 2;
+sqlite> DELETE FROM cats WHERE id = 1;
 ```
 
 Notice that this time we selected the row to delete using the Primary Key column. Remember that every table row has a Primary Key column that is unique. Lil' Bub was the second row in the database and thus had an id of `2`.
