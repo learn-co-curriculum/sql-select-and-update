@@ -190,12 +190,12 @@ A boilerplate `DELETE` statement looks like this:
 DELETE FROM [table name] WHERE [column name] = [value];
 ```
 
-Let's go ahead and delete Lil' Bub from our `cats` table (sorry Lil' Bub):
+Let's go ahead and delete Hana from our `cats` table (it turns out Hana is actually an iguana):
 
 ```sql
-sqlite> DELETE FROM cats WHERE id = 2;
+sqlite> DELETE FROM cats WHERE id = 3;
 ```
 
-Notice that this time we selected the row to delete using the Primary Key column. Remember that every table row has a Primary Key column that is unique. Lil' Bub was the second row in the database and thus had an id of `2`.
+Notice that this time we selected the row to delete using the Primary Key column. Remember that every table row has a Primary Key column that is unique. Hana was the third row in the database and thus had an id of `3`.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/sql-insert-select-update-code-along' title='Inserting, Selecting, Updating, and Deleting Database Rows'>Inserting, Selecting, Updating, and Deleting Database Rows</a> on Learn.co and start learning to code for free.</p>
