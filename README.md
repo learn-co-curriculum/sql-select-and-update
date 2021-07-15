@@ -57,13 +57,15 @@ accompanied by a parentheses enclosed list of the values that correspond to each
 column name.
 
 **Important:** Note that we _didn't specify_ the "id" column name or value.
-Since we created the `cats` table with an "id" column whose type is `INTEGER PRIMARY KEY`, we don't have to specify the id column values when we insert data.
-Primary Key columns are auto-incrementing. As long as you have defined an id
-column with a data type of `INTEGER PRIMARY KEY`, a newly inserted row's id
-column will be automatically given the correct value.
+Since we created the `cats` table with an "id" column whose type is
+`INTEGER PRIMARY KEY`, we don't have to specify the id column values when we
+insert data. Primary Key columns are auto-incrementing. As long as you have
+defined an id column with a data type of `INTEGER PRIMARY KEY`, a newly inserted
+row's id column will be automatically given the correct value.
 
 Let's add a few more cats to our table. This time we'll do this via our text
-editor. Create a file, `01_insert_cats_into_cats_table.sql`. Use two `INSERT INTO` statements to insert the following cats into the table:
+editor. Create a file, `01_insert_cats_into_cats_table.sql`. Use two
+`INSERT INTO` statements to insert the following cats into the table:
 
 <table border="1" cellpadding="4" cellspacing="0">
   <tr>
@@ -84,8 +86,15 @@ editor. Create a file, `01_insert_cats_into_cats_table.sql`. Use two `INSERT INT
 </table>
 
 Each `INSERT INTO` statement gets its own line in the `.sql` file in your text
-editor. Each line needs to end with a `;`. Run the file with the following code
-in your terminal:
+editor. Each line needs to end with a `;`.
+
+Exit the `sqlite` prompt if you have it running from before:
+
+```sh
+.quit
+```
+
+Then run the file with the following code in your terminal:
 
 ```bash
 sqlite3 pets_database.db < 01_insert_cats_into_cats_table.sql
@@ -103,6 +112,16 @@ Now that we've inserted some data into our `cats` table, we likely want to read
 that data. This is where the `SELECT` statement comes in. We use it to retrieve
 database data, or rows.
 
+Run this command to get back into the `sqlite` prompt and open the
+`pets_database.db` file:
+
+```sql
+sqlite3 pets_database.db
+```
+
+From this point forward, you'll be running the SQL commands from the `sqlite`
+prompt.
+
 ### Code Along II: SELECT FROM
 
 A basic `SELECT` statement works like this:
@@ -116,7 +135,8 @@ table we want to select them FROM.
 
 We want to select all the rows in our table, and we want to return the data
 stored in any and all columns in those rows. To do this, we could pass the name
-of each column explicitly. Run this command in the `sqlite` prompt in your terminal:
+of each column explicitly. Run this command in the `sqlite` prompt in your
+terminal:
 
 ```sql
 SELECT id, name, age, breed FROM cats;
